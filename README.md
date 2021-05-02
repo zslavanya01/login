@@ -1,21 +1,43 @@
 The login is the service in Todoapp.
 
-Clone the login code
+#apt update
+#mkdir go
+#cd go/
 
-#git clone https://github.com/zslavanya/login.git
+#mkdir src
+#cd src/
+
+#curl -O https://stroage.googleapis.com/golang/go1.13.5.linux-amd64.tar.gz
+
+#tar -xvf go1.13.5.linux-amd64.tar.gz
+
+#sudo mv go /usr/local
+#export GOPATH=$HOME/WORK
+#export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+#source ~/.profile
+#go version
+
+git clone https://github.com/zelar-soft-todoapp/login.git
 
 #cd login/
 
-#ls
+#vi /etc/systemd/system/login.service
 
-#apt update
+#go build
+#go get github.com/dgrijalva/jwt-go
+#go get github.com/labstack/echo
+#go get github.com/labstack/echo/middleware
+#go get github.com/labstack/gommon/log
+#go get github.com/openzipkin/zipkin-go
+#go get github.com/openzipkin/zipkin-go/middleware/http
+#go get github.com/openzipkin/zipkin-go/reporter/http
 
-#wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
+#go build main.go user.go tracing.go
+#go build
 
-#tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
+#systemctl daemon-reload
+#systemctl start login
+#systemctl enable login
+#systemctl status login
 
-#export PATH=$PATH:/usr/local/go/bin
-
-#source ~/.bashrc
-
-#go version
