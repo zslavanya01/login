@@ -15,7 +15,7 @@ pipeline {
         stage ('upload artifacts') {
             steps {
                 sh '''
-                  curl -f -v -u admin:admin123 --upload-file login.zip http://172.31.13.117:8081/repository/login/login.zip
+                  curl -f -v -u admin:admin123 --upload-file /home/ubuntu/workspace/CI-Pipelines/login.zip http://172.31.13.117:8081/repository/login/login.zip
                 '''
             }
         }
