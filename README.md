@@ -41,6 +41,7 @@ git clone https://github.com/zelar-soft-todoapp/login.git
 #systemctl enable login
 #systemctl status login
 xx
-n n
+new push
+
 
 
