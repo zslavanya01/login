@@ -1,0 +1,9 @@
+@Library('todoapp') _
+
+docker (
+    COMPONENT          :  'login',
+    PROJECT_NAME       :  "Todoapp",
+    SLAVE_LABEL        :  "DOCKER",
+    
+)
+
