@@ -42,6 +42,7 @@ git clone https://github.com/zelar-soft-todoapp/login.git
 #systemctl status login
 xx
 new push
-new tag
+new 
+new
 
 
